@@ -1,0 +1,24 @@
+MLD
+Table: TypePrestation
+
+type_prestation_id (Clé primaire)
+type_prestation (Enum: Analyse, Radio)
+Table: EtatRendezVous
+
+etat_rendezvous_id (Clé primaire)
+etat_rendezvous (Enum: Encours, Annuler)
+Table: Patient
+
+numPatient (Clé primaire)
+nomComplet
+Table: Consultation
+
+consultation_id (Clé primaire)
+medecin
+medicament
+Table: RendezVous
+
+rendezvous_id (Clé primaire)
+date
+etat_rendezvous_id (Clé étrangère  EtatRendezVous)
+numPatient (Clé étrangère  Patient)
